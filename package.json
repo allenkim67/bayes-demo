@@ -1,0 +1,22 @@
+{
+  "name": "bayes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bayes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "jquery": "^3.3.1",
+    "jquery-ui-dist": "^1.12.1",
+    "jquery-ui-touch-punch": "^0.2.3",
+    "lodash": "^4.17.5",
+    "split.js": "^1.3.5",
+    "webpack": "^3.11.0"
+  }
+}

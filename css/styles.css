@@ -1,0 +1,92 @@
+.container {
+  padding: 30px;
+  max-width: 700px;
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    padding: 15px;
+  }
+}
+
+.formula {
+  background: #f9f9f9;
+  width: 250px;
+  padding: 10px;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: column;
+  border: thin solid black;
+  height: 300px;
+  width: 300px;
+}
+
+.pane, .pane-v {
+  position: relative;
+  overflow: hidden;
+}
+
+.pane:not(:first-of-type) {
+  border-top: thin solid black;
+}
+
+.pane-v:not(:first-of-type) {
+  border-left: thin solid black; 
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.box-label {
+  position: absolute;
+  left: 5px;
+  top: -3px;
+  font-weight: bold;
+  font-size: small;
+}
+input[type="number"] {
+  text-align: right;
+  height: 26px;
+  font-size: large;
+  width: 62px;
+}
+
+.observed-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#observed, .arrow {
+  margin-right: 10px;
+}
+
+#observed .box {
+  width: 50%;
+}
+
+#observed .pane {
+  display: flex;
+  height: 50%;
+  background: #555;
+}
+
+.observed {
+  background: white;
+}
+
+.arrow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 60px;
+  margin-top: 25px;
+}
+
+#posterior .box {
+  height: 50%;
+}
