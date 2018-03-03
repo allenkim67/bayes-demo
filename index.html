@@ -39,7 +39,7 @@
     <li>
       <p>
         Divide the sample space vertically for some number of mutually exclusive events
-        <b>H1, H2, H3</b>… The probability assigned to any event
+        <b>H1, H2, H3</b>… <b>P(H)</b>, the probability assigned to any event
         <b>H</b> is called a "prior". You can think of this as your model of the world before seeing any evidence.
         Percentages shown represent <b>P(H)</b>.
       </p>    
@@ -60,6 +60,7 @@
       <p>
         For each vertical slice, divide space horizontally for some number of mutually exclusive events
         <b>E1, E2, E3</b>… You can think of these events as possible outcomes that would be evidence for one of your priors.
+        <b>P(E|H)</b>, the probability of seeing some event <b>E</b> for a given event <b>H</b> is called a "likelihood".
         Percentages shown represent <b>P(E|H)</b>.
       </p>
       <div>
@@ -91,11 +92,10 @@
     </li>
     <li>
       <p>
-        Once a particular event
-        <b>E</b> is observed, you can discard all other events
-        <b>E</b>
-        that were not observed. What remains are your posterior probabilities. You can think of this as your updated model of the
-        world after seeing evidence. Percentages shown represent <b>P(H|E)</b>.
+        Once a particular event <b>E</b> is observed, you can discard all other events <b>E</b>
+        that were not observed. What remains are your posterior probabilities, or just "posteriors".
+        You can think of this as your updated model of the world after seeing evidence. The posteriors
+        would then become the updated priors when considering new evidence. Percentages shown represent <b>P(H|E)</b>.
       </p>
       <div class="observed-container">
         <div>
