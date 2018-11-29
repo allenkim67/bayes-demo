@@ -8,14 +8,14 @@ module.exports = {
     filename: 'bayes.js'
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
-        loader: 'babel-loader',
-        exclude: /node_modules/,
-        query: {
-          presets: ['es2015']
-        }
+	use: [{
+	  loader: 'babel-loader',
+	  query: {presets: ['es2015']}
+	}],
+        exclude: /node_modules/
       }
     ]
   },
