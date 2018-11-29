@@ -15,6 +15,11 @@ blockquote {
 
 body {
   line-height: 25px;
+  margin-top: 20px;
+}
+
+h1 {
+  line-height: 40px;
 }
 
 p {
